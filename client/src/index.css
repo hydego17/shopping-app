@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 
 body {
   font-family: "Crimson Text", serif;
@@ -7,4 +7,39 @@ body {
 
 main {
   min-height: 80vh;
+}
+
+i {
+  margin: 0 0.2rem;
+}
+
+h3 {
+  padding: 1rem 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.product-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.rating span {
+  margin: 0.6rem 0;
+}
+
+.rating span i {
+  margin: 0 1px;
+  font-size: 0.8rem;
+}
+
+.num-reviews {
+  display: inline-block;
+  padding-left: 0.3rem;
+  letter-spacing: 0;
+}
+
+h4 {
+  margin: 1rem 0;
 }
