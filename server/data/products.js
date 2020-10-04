@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Chanel Collections",
     image: "/images/chanel-makeup.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Coco Mademoiselle",
     image: "/images/coco-mademoiselle.jpg",
     description:
@@ -26,9 +24,9 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Coco Noir",
     image: "/images/coco-noir.jpg",
+    image2: "/images/coco-noir-2.jpg",
     description:
       "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
     brand: "Cannon",
@@ -39,7 +37,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Chanel Gabrielle",
     image: "/images/gabrielle.jpg",
     description:
@@ -52,7 +49,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Green Drink",
     image: "/images/green-drink.jpg",
     description:
@@ -65,7 +61,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Versace Perfume",
     image: "/images/versace.jpg",
     description:
