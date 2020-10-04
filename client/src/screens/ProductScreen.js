@@ -18,8 +18,10 @@ const ProductScreen = ({ match }) => {
 
   return (
     <>
-      <Link to="/" className="btn btn-dark my-3">
-        Go Back
+      <Link to="/">
+        <p className="my-4">
+          <i className="fas px-1 fa-angle-left"></i>Go Back
+        </p>
       </Link>
       <Row>
         <Col md={6}>
