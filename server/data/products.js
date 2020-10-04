@@ -3,7 +3,7 @@ const products = [
     name: "Chanel Collections",
     image: "/images/chanel-makeup.jpg",
     description:
-      "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
+      "Each easy-to-wear compact offers endless possibilities, with two medium tones to colour and contour, a deep shadow to intensify and a light shade to highlight. Pure, long-lasting pigments ensure an intense colour effect while the soft, smooth texture allows for effortless application.",
     brand: "Apple",
     category: "Electronics",
     price: 599000,
@@ -15,7 +15,7 @@ const products = [
     name: "Coco Mademoiselle",
     image: "/images/coco-mademoiselle.jpg",
     description:
-      "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
+      "Composed by CHANEL In-House Perfumer Creator Olivier Polge, this soft floral-woody fragrance celebrates the sensuality of night with enveloping notes of white musk illuminated by a soft jasmine absolute and rose petal accord.",
     brand: "Apple",
     category: "Electronics",
     price: 1399000,
@@ -28,7 +28,7 @@ const products = [
     image: "/images/coco-noir.jpg",
     image2: "/images/coco-noir-2.jpg",
     description:
-      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
+      "As a prelude, a vibrant, sophisticated burst dominated by Grapefruit sparks the curiosity. A generous heart gradually reveals the sensuality of May Rose and the remarkable note of Geranium Rose Leaf. This luminous floral facet creates a striking presence, while Venezuelan Tonka Bean and Indonesian Patchouli notes add warmth.",
     brand: "Cannon",
     category: "Electronics",
     price: 1199000,
@@ -40,7 +40,7 @@ const products = [
     name: "Chanel Gabrielle",
     image: "/images/gabrielle.jpg",
     description:
-      "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
+      "Olivier Polge crafted this Eau de Parfum as an imaginary flower — a radiant and sparkling, purely feminine Chanel blossom based on a bouquet of four white flowers: a rich, enveloping heart of exotic Jasmine shimmers with the fruity green notes of Ylang-Ylang, while fresh and sparkling Orange Blossom shines through, offering a glimpse of Grasse Tuberose captured at its finest. Four points of light that recall the four corners of the bottle.",
     brand: "Sony",
     category: "Electronics",
     price: 999000,
@@ -52,7 +52,7 @@ const products = [
     name: "Green Drink",
     image: "/images/green-drink.jpg",
     description:
-      "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     brand: "Logitech",
     category: "Electronics",
     price: 699000,
@@ -64,7 +64,7 @@ const products = [
     name: "Versace Perfume",
     image: "/images/versace.jpg",
     description:
-      "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space",
+      "A perfume which enchants with its Mediterranean refinement of sparkling Bergamot, Citron of Diamante, and noble Neroli, with the captivating addition of irresistible and attractive accents of Pear Sorbet.",
     brand: "Amazon",
     category: "Electronics",
     price: 1299000,
