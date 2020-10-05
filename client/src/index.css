@@ -55,3 +55,16 @@ h5 {
   font-family: "Halant", serif;
   font-weight: 500;
 }
+
+.shopping-cart {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 1.2rem 0;
+}
+
+.subtotal-cart {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+}

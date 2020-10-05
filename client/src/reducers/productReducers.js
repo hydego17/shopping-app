@@ -37,3 +37,4 @@ export const productDetailsReducer = (
       return state;
   }
 };
+
