@@ -14,6 +14,7 @@ import Rating from "../components/Rating";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listProductDetails } from "../actions/productActions";
+import { AnimatePresence, motion } from "framer-motion";
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);
@@ -32,97 +33,106 @@ const ProductScreen = ({ history, match }) => {
   };
 
   return (
-    <>
-      <Link to="/">
-        <p className="my-4">
-          <i className="fas px-1 fa-angle-left"></i>Go Back
-        </p>
-      </Link>
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <Link to="/">
+          <p className="my-4">
+            <i className="fas px-1 fa-angle-left"></i>Go Back
+          </p>
+        </Link>
 
-      {loading ? (
-        <Loader />
-      ) : error ? (
-        <Message variant="warning">{error}</Message>
-      ) : (
-        <Row>
-          <Col md={6}>
-            <Image src={product.image} alt={product.name} fluid></Image>
-          </Col>
-          <Col md={3}>
-            <ListGroup variant="flush">
-              <ListGroup.Item>
-                <span className="product-name-title">{product.name}</span>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Rating
-                  value={product.rating}
-                  text={`(${product.numReviews} reviews)`}
-                />
-              </ListGroup.Item>
-              <ListGroup.Item>Price: IDR {product.price}</ListGroup.Item>
-              <ListGroup.Item className="desc-text">
-                {product.description}
-              </ListGroup.Item>
-            </ListGroup>
-          </Col>
-          <Col md={3}>
-            <Card>
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Message variant="warning">{error}</Message>
+        ) : (
+          <Row>
+            <Col md={6}>
+              <Image src={product.image} alt={product.name} fluid></Image>
+            </Col>
+            <Col md={3}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <Row>
-                    <Col> Price:</Col>
-                    <Col>
-                      <strong>IDR {product.price}</strong>
-                    </Col>
-                  </Row>
+                  <span className="product-name-title">{product.name}</span>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <Row>
-                    <Col>
-                      {product.countInStock > 0
-                        ? `In Stock (${product.countInStock} left)`
-                        : "Out of Stock"}
-                    </Col>
-                  </Row>
+                  <Rating
+                    value={product.rating}
+                    text={`(${product.numReviews} reviews)`}
+                  />
                 </ListGroup.Item>
-
-                {product.countInStock > 0 && (
+                <ListGroup.Item>Price: IDR {product.price}</ListGroup.Item>
+                <ListGroup.Item className="desc-text">
+                  {product.description}
+                </ListGroup.Item>
+              </ListGroup>
+            </Col>
+            <Col md={3}>
+              <Card>
+                <ListGroup variant="flush">
                   <ListGroup.Item>
                     <Row>
-                      <Col>Qty</Col>
+                      <Col> Price:</Col>
                       <Col>
-                        <Form.Control
-                          as="select"
-                          value={qty}
-                          onChange={(e) => setQty(e.target.value)}
-                        >
-                          {[...Array(product.countInStock).keys()].map((x) => (
-                            <option key={x + 1} value={x + 1}>
-                              {x + 1}
-                            </option>
-                          ))}
-                        </Form.Control>
+                        <strong>IDR {product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
-                )}
+                  <ListGroup.Item>
+                    <Row>
+                      <Col>
+                        {product.countInStock > 0
+                          ? `In Stock (${product.countInStock} left)`
+                          : "Out of Stock"}
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
 
-                <ListGroup.Item>
-                  <Button
-                    onClick={addToCartHandler}
-                    className="btn-block"
-                    type="button"
-                    disabled={product.countInStock === 0}
-                  >
-                    Add to Cart
-                  </Button>
-                </ListGroup.Item>
-              </ListGroup>
-            </Card>
-          </Col>
-        </Row>
-      )}
-    </>
+                  {product.countInStock > 0 && (
+                    <ListGroup.Item>
+                      <Row>
+                        <Col>Qty</Col>
+                        <Col>
+                          <Form.Control
+                            as="select"
+                            value={qty}
+                            onChange={(e) => setQty(e.target.value)}
+                          >
+                            {[...Array(product.countInStock).keys()].map(
+                              (x) => (
+                                <option key={x + 1} value={x + 1}>
+                                  {x + 1}
+                                </option>
+                              )
+                            )}
+                          </Form.Control>
+                        </Col>
+                      </Row>
+                    </ListGroup.Item>
+                  )}
+
+                  <ListGroup.Item>
+                    <Button
+                      onClick={addToCartHandler}
+                      className="btn-block"
+                      type="button"
+                      disabled={product.countInStock === 0}
+                    >
+                      Add to Cart
+                    </Button>
+                  </ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </Col>
+          </Row>
+        )}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 
