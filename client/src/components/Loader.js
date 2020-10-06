@@ -1,22 +1,8 @@
 import React from "react";
-import { Spinner } from "react-bootstrap";
+import { Bar } from "styled-loaders-react";
 
 const Loader = () => {
-  return (
-    <Spinner
-      animation="grow"
-      variant="dark"
-      role="status"
-      style={{
-        height: "50px",
-        width: "50px",
-        margin: "auto",
-        display: "block",
-      }}
-    >
-      <span className="sr-only">Loading...</span>
-    </Spinner>
-  );
+  return <Bar duration="1.2s" />;
 };
 
 export default Loader;
