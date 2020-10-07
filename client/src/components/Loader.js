@@ -1,8 +1,14 @@
 import React from "react";
-import { Bar } from "styled-loaders-react";
+import { css } from "@emotion/core";
+import BarLoader from "react-spinners/BarLoader";
+
+const custom = css`
+  display: block;
+  margin: 0 auto;
+`;
 
 const Loader = () => {
-  return <Bar duration="1.2s" />;
+  return <BarLoader css={custom} />;
 };
 
 export default Loader;
