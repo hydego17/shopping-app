@@ -7,6 +7,8 @@ import HomeScreens from "./screens/HomeScreens";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import { AnimatePresence, motion } from "framer-motion";
+import LoginScreen from "./screens/LoginScreen";
+import RegisterScreen from "./screens/RegisterScreen";
 
 const App = () => {
   return (
@@ -21,9 +23,11 @@ const App = () => {
           <Header />
           <main>
             <Container>
-              <Route path="/" component={HomeScreens} exact />
+              <Route path="/login" component={LoginScreen} />
+              <Route path="/register" component={RegisterScreen} />
               <Route path="/product/:id" component={ProductScreen} />
               <Route path="/cart/:id?" component={CartScreen} />
+              <Route path="/" component={HomeScreens} exact />
             </Container>
           </main>
           <Footer />
