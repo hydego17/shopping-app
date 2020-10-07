@@ -14,6 +14,8 @@ import Rating from "../components/Rating";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listProductDetails } from "../actions/productActions";
+
+//animation
 import { AnimatePresence, motion } from "framer-motion";
 
 const ProductScreen = ({ history, match }) => {

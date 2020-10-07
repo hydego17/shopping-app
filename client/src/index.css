@@ -73,6 +73,11 @@ h5 {
   margin: 2rem 0;
 }
 
+#my-orders {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+}
+
 input#email.form-control,
 input#password.form-control,
 input#name.form-control,
