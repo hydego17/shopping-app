@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
+import CheckoutSteps from "../components/CheckoutSteps";
 import { saveShippingAddress } from "../actions/cartActions";
 
 //animation
@@ -32,6 +33,7 @@ const ShippingScreen = ({ history }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.4 }}
       >
+        <CheckoutSteps step1 step2 />
         <FormContainer>
           <h3>Shipping</h3>
           <Form onSubmit={submitHandler}>
