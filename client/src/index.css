@@ -79,6 +79,10 @@ h5 {
 }
 
 input#email.form-control,
+input#address.form-control,
+input#city.form-control,
+input#postalCode.form-control,
+input#country.form-control,
 input#password.form-control,
 input#name.form-control,
 input#confirmPassword.form-control {
