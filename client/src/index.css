@@ -19,6 +19,15 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  margin: 1rem 0;
+}
+
+h5 {
+  margin: 2rem 0;
+  letter-spacing: 2px;
+}
+
 .product-name {
   text-transform: lowercase;
   font-size: 1.1rem;
@@ -44,11 +53,6 @@ h3 {
   display: inline-block;
   padding-left: 0.3rem;
   letter-spacing: 0;
-}
-
-h5 {
-  margin: 2rem 0;
-  letter-spacing: 2px;
 }
 
 .desc-text {
@@ -89,4 +93,9 @@ input#confirmPassword.form-control {
   font-family: serif;
   letter-spacing: 0.8px;
   font-size: 1rem;
+}
+
+.order-details {
+  font-family: "Halant", serif;
+  font-weight: 500;
 }
