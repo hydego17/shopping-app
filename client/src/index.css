@@ -28,6 +28,10 @@ h5 {
   letter-spacing: 2px;
 }
 
+/* .nav-item {
+  margin: 0;
+} */
+
 .product-name {
   text-transform: lowercase;
   font-size: 1.1rem;
@@ -96,6 +100,20 @@ input#confirmPassword.form-control {
 }
 
 .order-details {
+  font-family: "Halant", serif;
+  font-weight: 500;
+}
+
+/* UserListScreen */
+.fa-check {
+  color: rgb(80, 170, 80);
+}
+
+.fa-times {
+  color: rgb(228, 55, 55);
+}
+
+.table-body {
   font-family: "Halant", serif;
   font-weight: 500;
 }
