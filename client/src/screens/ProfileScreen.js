@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Table, Form, Button, Row, Col } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
@@ -138,11 +137,7 @@ const ProfileScreen = ({ location, history }) => {
                   {orders.map((order) => (
                     <tr key={order._id}>
                       <td>
-                        {/* <LinkContainer to={`/order/${order._id}`}>
-                          <Button className="btn-sm" variant="link">
-                            {order._id}
-                          </Button>
-                        </LinkContainer> */}
+                        {/* eslint-disable-next-line */}
                         <Link to to={`/order/${order._id}`}>
                           {order._id}
                         </Link>
