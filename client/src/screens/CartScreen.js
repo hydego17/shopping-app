@@ -66,7 +66,7 @@ const CartScreen = ({ match, history, location }) => {
               <ListGroup>
                 {cartItems.map((item) => (
                   <ListGroup.Item key={item.product}>
-                    <Row>
+                    <Row className="align-items-center">
                       <Col md={2}>
                         <Image src={item.image} alt={item.name} fluid />
                       </Col>

@@ -61,11 +61,11 @@ const UserEditScreen = ({ match, history }) => {
         <>
           <Link to="/admin/userlist">
             <p className="my-4">
-              <i className="fas px-1 fa-angle-left"></i>Go Back
+              <i className="bx bxs-chevrons-left"></i>Go Back
             </p>
           </Link>
           <FormContainer>
-            <h4 id="sign-in"> Edit User</h4>
+            <h4> Edit User</h4>
             {loadingUpdate && <Loader />}
             {errorUpdate && <Message variant="warning">{errorUpdate}</Message>}
 
@@ -97,8 +97,9 @@ const UserEditScreen = ({ match, history }) => {
 
                 <Form.Group controlId="isadmin">
                   <Form.Check
+                    className="my-4"
                     type="checkbox"
-                    label="Is Admin"
+                    label="Select as admin"
                     checked={isAdmin}
                     onChange={(e) => setIsAdmin(e.target.checked)}
                   ></Form.Check>

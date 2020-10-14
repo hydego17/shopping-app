@@ -44,7 +44,7 @@ const ProductScreen = ({ history, match }) => {
       >
         <Link to="/">
           <p className="my-4">
-            <i className="fas px-1 fa-angle-left"></i>Go Back
+            <i className="bx bxs-chevrons-left"></i>Go Back
           </p>
         </Link>
 

@@ -26,7 +26,7 @@ const Header = () => {
             <Nav className="ml-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-cart-arrow-down"></i>Cart
+                  <i className="bx bxs-shopping-bag"></i>Cart
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -43,7 +43,7 @@ const Header = () => {
               ) : (
                 <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i>Sign In
+                    <i className="bx bxs-user-rectangle"></i>Sign In
                   </Nav.Link>
                 </LinkContainer>
               )}

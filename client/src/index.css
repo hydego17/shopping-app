@@ -9,10 +9,33 @@ main {
   min-height: 80vh;
 }
 
+/* Genreal component */
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  min-height: 190px;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* icon */
 i {
   margin: 0 0.2rem;
 }
 
+.bxs-chevrons-left {
+  vertical-align: middle;
+}
+
+/* ============================================*/
 h3 {
   padding: 1rem 0;
   text-transform: capitalize;
@@ -28,9 +51,10 @@ h5 {
   letter-spacing: 2px;
 }
 
-/* .nav-item {
+/* ========================================= */
+.nav-item {
   margin: 0;
-} */
+}
 
 .product-name {
   text-transform: lowercase;
@@ -86,14 +110,7 @@ h5 {
   font-size: 1.3rem;
 }
 
-input#email.form-control,
-input#address.form-control,
-input#city.form-control,
-input#postalCode.form-control,
-input#country.form-control,
-input#password.form-control,
-input#name.form-control,
-input#confirmPassword.form-control {
+.form-control {
   font-family: serif;
   letter-spacing: 0.8px;
   font-size: 1rem;
