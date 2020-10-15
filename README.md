@@ -4,7 +4,7 @@
 
 #### Demo: https://mern-shoppingapp.herokuapp.com/
 
-This is my MERN Stack Web Development project to build a shopping app that includes some functionalites such as:
+This is my full stack web development project to build a shopping app with  some functionalites such as:
 
 - Admin dashboard to add or edit products, and set the order
 - Product list, search, edit , and create
@@ -12,7 +12,7 @@ This is my MERN Stack Web Development project to build a shopping app that inclu
 - Product reviews and ratings
 - Top products carousel
 - Product search feature
-- User profile with orders-
+- User profile with orders
 - Admin product management
 - Admin user management
 - Admin Order details page
