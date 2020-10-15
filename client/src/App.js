@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import HomeScreens from "./screens/HomeScreens";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
-import { AnimatePresence, motion } from "framer-motion";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ProfileScreen from "./screens/ProfileScreen";
@@ -20,6 +19,7 @@ import ProductListScreen from "./screens/ProductListScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 
+import { AnimatePresence, motion } from "framer-motion";
 const App = () => {
   return (
     <Router>
