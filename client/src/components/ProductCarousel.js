@@ -48,7 +48,7 @@ const ProductCarousel = () => {
               <Link to={`/product/${product._id}`}>
                 <Carousel.Caption className="carousel-caption">
                   <h5 className="carouselname">{product.name}</h5>
-                  <small>{product.description}</small>
+                  <small className="carouseldesc">{product.description}</small>
                 </Carousel.Caption>
               </Link>
             </Carousel.Item>

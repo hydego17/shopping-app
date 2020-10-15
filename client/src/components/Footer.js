@@ -1,14 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <footer>
-      <Container>
-        <Row className="justify-content-between py-4">
-          <Col>Copyright &copy; Laura Chouette</Col>
+      <Container className="d-flex justify-content-between py-5">
+        <small>Copyright &copy; Laura Chouette</small>
 
-          <small>
+        <small>
+          <em>
             made by{" "}
             <a
               rel="noopener noreferrer"
@@ -17,8 +17,8 @@ const Footer = () => {
             >
               Umma Ahimsha
             </a>
-          </small>
-        </Row>
+          </em>
+        </small>
       </Container>
     </footer>
   );

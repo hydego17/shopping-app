@@ -27,7 +27,7 @@ const Header = () => {
 
           <Navbar.Collapse
             id="basic-navbar-nav"
-            className="justify-content-between"
+            className="navbar-elements"
           >
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav>

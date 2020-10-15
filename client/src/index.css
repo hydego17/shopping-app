@@ -11,6 +11,16 @@ main {
 
 /* Genreal component */
 
+small {
+  font-family: "Playfair Display", serif;
+}
+
+@media (min-width: 768px) {
+  small {
+    font-size: 0.8rem;
+  }
+}
+
 .alert {
   display: flex;
   justify-content: space-between;
@@ -66,10 +76,9 @@ i {
   color: white;
   margin: 0;
 }
-small {
+
+.carouseldesc {
   font-style: italic;
-  font-size: 0.8rem;
-  font-family: "Playfair Display", serif;
 }
 
 .carousel-control-prev,
@@ -98,14 +107,32 @@ h5 {
   margin: 0;
 }
 
+.navbar-elements {
+  display: flex;
+  flex-flow: wrap-reverse;
+  justify-content: space-between;
+}
+
 #search-box {
   font-style: italic;
   letter-spacing: 0.5px;
   font-size: 0.9rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #search-box {
     margin: 1rem 0;
+  }
+
+  .form-control {
+    margin: 0.75rem 0 !important;
+    width: 100% !important;
+  }
+  .form-inline {
+    width: 100%;
+  }
+
+  .nav-button {
+    width: 100%;
   }
 }
 
@@ -148,6 +175,28 @@ h5 {
   font-weight: 500;
   font-size: 1.04rem;
   letter-spacing: 0.3px;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    flex: 1 1 auto;
+    min-height: 140px;
+    padding: 1rem;
+  }
+  .product-name {
+    text-transform: lowercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+  }
+
+  .product-price {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+  }
 }
 
 /*======== Cart Screen ================*/
