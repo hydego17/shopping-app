@@ -49,7 +49,7 @@ const CartScreen = ({ match, history, location }) => {
       >
         <Row>
           <Col md={9}>
-            <span className="shopping-cart"> Shopping Cart</span>
+            <h4> Shopping Cart</h4>
             {cartItems.length === 0 ? (
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -112,10 +112,10 @@ const CartScreen = ({ match, history, location }) => {
             <Card>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <span className="subtotal-cart">
+                  <p className="subtotal-cart">
                     Subtotal(
                     {cartItems.reduce((acc, item) => acc + item.qty, 0)}) items
-                  </span>
+                  </p>
                   IDR{" "}
                   {cartItems.reduce(
                     (acc, item) => acc + item.qty * item.price,

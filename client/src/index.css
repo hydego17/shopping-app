@@ -22,11 +22,6 @@ main {
   min-height: 190px;
 }
 
-.carousel-img {
-  width: 100%;
-  max-width: 600px;
-}
-
 img {
   object-fit: cover;
 }
@@ -40,9 +35,46 @@ i {
   vertical-align: middle;
 }
 
+/* =========== Carousel ================= */
+.carousel-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
+}
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+}
+.carousel-caption {
+  padding: 4vw;
+  opacity: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  top: 0;
+  left: 1px;
+  right: 1px;
+  bottom: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.carouselname {
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+small {
+  font-style: italic;
+  font-size: 0.8rem;
+  font-family: "Playfair Display", serif;
+}
+
 /* ============================================*/
 h3 {
-  padding: 1rem 0;
+  margin: 2rem 0 1rem 0;
   text-transform: capitalize;
   text-align: center;
 }
@@ -56,9 +88,20 @@ h5 {
   letter-spacing: 2px;
 }
 
-/* ========================================= */
+/* ================  Nav bar ================ */
 .nav-item {
   margin: 0;
+}
+
+#search-box {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+@media (max-width: 576px) {
+  #search-box {
+    margin: 1rem 0;
+  }
 }
 
 /*=========== Product Screen ===============*/
@@ -103,16 +146,14 @@ h5 {
 }
 
 /*======== Cart Screen ================*/
-.shopping-cart {
+/* .shopping-cart {
   display: inline-block;
   font-size: 1.5rem;
   margin: 1.2rem 0;
-}
+} */
 
 .subtotal-cart {
-  display: inline-block;
   font-size: 1.2rem;
-  padding: 0.5rem 0;
   margin-top: 1rem;
 }
 
