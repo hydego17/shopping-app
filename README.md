@@ -16,4 +16,4 @@ This is my full stack web development project to build a shopping app with some 
 - Top products carousel
 - PayPal / credit card integration
 
-Stack: React, Redux, Node, Express & MongoDB + React Bootstrap + Framer motion
+#### Stack: React, Redux, Node, Express & MongoDB + React Bootstrap + Framer motion
