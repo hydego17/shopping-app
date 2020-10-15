@@ -8,19 +8,12 @@
 
 This is my full stack web development project to build a shopping app with some functionalites such as:
 
-- Admin dashboard to add or edit products, and set the order
+- Admin dashboard for Product, User and Order management
 - Product list, search, edit , and create
-- User Login, Order, Payment, and Review
+- User Login, Profile, Order, and Checkout process (shipping, payment method, etc)
 - Product reviews and ratings
-- Top products carousel
-- Product search feature
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
-- Mark orders as delivered option
-- Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration
 - Custom database seeder script
+- Top products carousel
+- PayPal / credit card integration
 
 Stack: React, Redux, Node, Express & MongoDB + React Bootstrap + Framer motion
