@@ -11,7 +11,7 @@ import ProductCarousel from "../components/ProductCarousel";
 import { listProducts } from "../actions/productActions";
 import { AnimatePresence, motion } from "framer-motion";
 
-const HomeScreens = ({ match }) => {
+const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
 
   const pageNumber = match.params.pageNumber || 1;
@@ -71,4 +71,4 @@ const HomeScreens = ({ match }) => {
   );
 };
 
-export default HomeScreens;
+export default HomeScreen;
