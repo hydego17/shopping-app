@@ -5,10 +5,19 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <Row>
-          <Col className="text-center py-4">
-            Copyright &copy; Laura Chouette
-          </Col>
+        <Row className="justify-content-between py-4">
+          <Col>Copyright &copy; Laura Chouette</Col>
+
+          <small>
+            made by{" "}
+            <a
+              rel="noopener noreferrer"
+              href="https://hydego17.github.io/"
+              target="_blank"
+            >
+              Umma Ahimsha
+            </a>
+          </small>
         </Row>
       </Container>
     </footer>
