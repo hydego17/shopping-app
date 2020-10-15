@@ -109,7 +109,7 @@ h5 {
 
 .navbar-elements {
   display: flex;
-  flex-flow: wrap-reverse;
+  flex-flow: wrap;
   justify-content: space-between;
 }
 
@@ -132,6 +132,7 @@ h5 {
   }
 
   .nav-button {
+    margin-bottom: 0.75rem;
     width: 100%;
   }
 }
