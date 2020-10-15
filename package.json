@@ -2,6 +2,9 @@
   "name": "mern-shop",
   "version": "1.0.0",
   "description": "Mern Shopping App",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "server.js",
   "type": "module",
   "scripts": {
