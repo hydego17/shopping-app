@@ -2,9 +2,11 @@
 
 ### (Deployed)
 
+![Mern Shopping App](https://cdn.dribbble.com/users/6153495/screenshots/14332661/media/52809175e0154431803a32f836e025a5.png)
+
 #### Demo: https://mern-shoppingapp.herokuapp.com/
 
-This is my full stack web development project to build a shopping app with  some functionalites such as:
+This is my full stack web development project to build a shopping app with some functionalites such as:
 
 - Admin dashboard to add or edit products, and set the order
 - Product list, search, edit , and create
@@ -22,5 +24,3 @@ This is my full stack web development project to build a shopping app with  some
 - Custom database seeder script
 
 Stack: React, Redux, Node, Express & MongoDB + React Bootstrap + Framer motion
-
-![Mern Shopping App](https://cdn.dribbble.com/users/6153495/screenshots/14332661/media/52809175e0154431803a32f836e025a5.png)
