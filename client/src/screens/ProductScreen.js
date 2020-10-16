@@ -43,6 +43,7 @@ const ProductScreen = ({ history, match }) => {
   } = productReviewCreate;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (successProductReview) {
       alert("Review Submitted!");
       setRating(0);
