@@ -34,6 +34,7 @@ const HomeScreen = ({ match }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
         >
+          <h3>FEATURED</h3>
           <Meta />
           {!keyword ? (
             <ProductCarousel />
@@ -44,16 +45,23 @@ const HomeScreen = ({ match }) => {
               </p>
             </Link>
           )}
-          <h3>Latest Products</h3>
+          <h3>LATEST PRODUCTS</h3>
           {loading ? (
             <Loader />
           ) : error ? (
             <Message variant="warning">{error}</Message>
           ) : (
             <>
-              <Row>
+              <Row className="px-2">
                 {products.map((product) => (
-                  <Col key={product._id} xs={6} md={6} lg={4} xl={3}>
+                  <Col
+                    key={product._id}
+                    xs={6}
+                    md={6}
+                    lg={4}
+                    xl={3}
+                    className="px-2"
+                  >
                     <Product product={product} />
                   </Col>
                 ))}

@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600;700&family=Halant:wght@300;400;500&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
 body {
   background-color: rgb(252, 252, 252);
   font-family: "Cinzel", serif;
@@ -12,7 +9,7 @@ main {
   min-height: 80vh;
 }
 
-/* Genreal component */
+/* General component */
 
 small {
   font-family: "Playfair Display", serif;
@@ -27,12 +24,6 @@ small {
 .alert {
   display: flex;
   justify-content: space-between;
-}
-
-.card-img,
-.card-img-top,
-.card-img-bottom {
-  min-height: 190px;
 }
 
 img {
@@ -82,6 +73,14 @@ i {
 
 .carouseldesc {
   font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .carouseldesc {
+    overflow: hidden;
+    max-height: 50px;
+    font-size: 0.5rem;
+  }
 }
 
 .carousel-control-prev,
@@ -140,7 +139,7 @@ h5 {
   }
 }
 
-/*=========== Product Screen ===============*/
+/*=========== Product Component & Screen ===============*/
 
 .product-name {
   text-transform: lowercase;
@@ -179,6 +178,28 @@ h5 {
   font-weight: 500;
   font-size: 1.04rem;
   letter-spacing: 0.3px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  min-height: 200px;
+}
+
+.card-img-top {
+  transition: transform 1s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.product-name:hover {
+  color: #000;
 }
 
 @media (max-width: 576px) {
