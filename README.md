@@ -12,8 +12,5 @@ This is my full stack web development project to build a shopping app with some 
 - Product list, search, edit , and create
 - User Login, Profile, Order, and Checkout process (shipping, payment method, etc)
 - Product reviews and ratings
-- Custom database seeder script
-- Top products carousel
-- PayPal / credit card integration
 
 #### Stack: React, Redux, Node, Express & MongoDB + React Bootstrap + Framer motion
