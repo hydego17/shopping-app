@@ -12,7 +12,7 @@ const Footer = () => {
             made by{" "}
             <a
               rel="noopener noreferrer"
-              href="https://hydego17.github.io/"
+              href="https://hydego.me"
               target="_blank"
             >
               Umma Ahimsha
